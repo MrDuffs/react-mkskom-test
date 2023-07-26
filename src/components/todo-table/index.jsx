@@ -1,4 +1,4 @@
-import { memo } from 'react';
+import React, { memo } from 'react';
 import './style.scss';
 
 function TodoTable({ list, renderItem }) {
@@ -11,12 +11,12 @@ function TodoTable({ list, renderItem }) {
         <div className="todo-table__cell todo-table__cell--id">id</div>
       </div>
       {list.map((item) => (
-        <>
-          <div key={item.id} className="todo-table__row">
+        <React.Fragment key={item.id}>
+          <div className="todo-table__row">
             {renderItem(item)}
           </div>
           <span className="todo-table__row-line" />
-        </>
+        </React.Fragment>
       ))}
     </div>
   );
