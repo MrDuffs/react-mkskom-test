@@ -1,0 +1,37 @@
+.todo-table {
+  margin: 25px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-table__row {
+  padding: 10px 15px;
+}
+
+.todo-table__header {
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: bold;
+  color: #838383;
+  background: #f7fffd;
+  //border-bottom: 1px solid #ccc;
+  text-transform: uppercase;
+}
+
+.todo-table__cell {
+}
+
+.todo-table__cell--title {
+  flex-basis: 80%;
+}
+
+.todo-table__cell--userid {
+  flex-basis: 10%;
+}
+
+.todo-table__cell--id {
+  flex-basis: 3%;
+}

@@ -1,0 +1,32 @@
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-item__checkbox {
+  cursor: pointer;
+}
+
+.todo-item__title {
+  flex-basis: 80%;
+}
+.todo-item__userid {
+  flex-basis: 9%;
+}
+
+.userid__sign {
+  height: 35px;
+  width: 35px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: #8a4fff;
+  border-radius: 50%;
+}
+
+.todo-item__id {
+  flex-basis: 3%;
+  font-weight: bold;
+}
