@@ -11,9 +11,12 @@ function TodoTable({ list, renderItem }) {
         <div className="todo-table__cell todo-table__cell--id">id</div>
       </div>
       {list.map((item) => (
-        <div key={item.id} className="todo-table__row">
-          {renderItem(item)}
-        </div>
+        <>
+          <div key={item.id} className="todo-table__row">
+            {renderItem(item)}
+          </div>
+          <span className="todo-table__row-line" />
+        </>
       ))}
     </div>
   );
